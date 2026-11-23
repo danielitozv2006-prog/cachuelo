@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="es-EC">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CACHUELO — Plataforma de Trabajo Local en Tiempo Real en Ecuador</title>
+  <meta name="description" content="El trabajo está más cerca de lo que imaginas. CACHUELO conecta en tiempo real a personas que necesitan ayuda con trabajadores disponibles en Ecuador. Publica un cachuelo, negocia tarifas, navega con Waze o Google Maps y paga en efectivo." />
+  <meta name="keywords" content="Cachuelo, trabajos Ecuador, trabajo ocasional Ecuador, publicar tareas Ecuador, ganar dinero Ecuador, app Android Ecuador, Guayaquil, Quito, Manta, Cuenca, Loja, El Empalme, Quevedo" />
+  <meta name="theme-color" content="#0B1F2A" />
+  <link rel="canonical" href="https://danielitozv2006-prog.github.io/cachuelo/" />
+
+  <!-- Open Graph / WhatsApp / Facebook / TikTok -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_EC" />
+  <meta property="og:site_name" content="CACHUELO" />
+  <meta property="og:title" content="CACHUELO — El trabajo está más cerca de lo que imaginas" />
+  <meta property="og:description" content="Conecta con personas que necesitan ayuda y encuentra oportunidades para trabajar cerca de ti en Ecuador. Descarga la app oficial para Android." />
+  <meta property="og:url" content="https://danielitozv2006-prog.github.io/cachuelo/" />
+  <meta property="og:image" content="https://danielitozv2006-prog.github.io/cachuelo/assets/cachuelo-showcase.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="800" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CACHUELO — Trabajo local bajo demanda en Ecuador" />
+  <meta name="twitter:description" content="Publica un cachuelo, recibe ofertas en tiempo real o actívate para generar ingresos cerca de ti. Descarga la APK oficial para Android." />
+  <meta name="twitter:image" content="https://danielitozv2006-prog.github.io/cachuelo/assets/cachuelo-showcase.jpg" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/icon-192.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===================================================================== -->
+  <!-- NAVEGACIÓN SUPERIOR FIJA                                              -->
+  <!-- ===================================================================== -->
+  <header class="navbar" id="top">
+    <div class="container nav-inner">
+      <a href="#top" class="brand-link" aria-label="CACHUELO Inicio">
+        <svg viewBox="0 0 100 85" width="42" height="36" aria-hidden="true">
+          <path d="M22,48 Q45,46 62,51 Q55,73 30,75 Q16,72 22,48 Z" fill="#00B4A6" />
+          <path d="M10,39 A32,30 0 0,1 74,39 L78,39 Q80,45 70,46 L8,46 Q2,45 6,38 Z" fill="#FF8A00" />
+          <line x1="35" y1="15" x2="33" y2="26" stroke="#0B1F2A" stroke-width="4.5" stroke-linecap="round" />
+          <line x1="48" y1="13" x2="48" y2="25" stroke="#0B1F2A" stroke-width="4.5" stroke-linecap="round" />
+          <g transform="translate(68,53) rotate(-42)">
+            <rect x="-22" y="-5.5" width="44" height="11" rx="5" fill="#F4F6FA" />
+            <circle cx="22" cy="0" r="12" fill="#F4F6FA" />
+            <circle cx="-20" cy="0" r="9.5" fill="#F4F6FA" />
+            <circle cx="26" cy="0" r="5.5" fill="#0B1F2A" />
+            <circle cx="-22" cy="0" r="4.2" fill="#0B1F2A" />
+          </g>
+        </svg>
+        <span class="wordmark">CACHU<span class="accent">ELO</span></span>
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Navegación principal">
+        <a href="#que-es">Qué es</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#trabajadores">Trabajadores</a>
+        <a href="#ecuador">Ecuador</a>
+        <a href="#seguridad">Seguridad</a>
+        <a href="#faq">Preguntas</a>
+        <a href="#descargar" class="btn btn-primary btn-sm nav-cta">Descargar APK</a>
+      </nav>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- =================================================================== -->
+    <!-- A. HERO PRINCIPAL                                                   -->
+    <!-- =================================================================== -->
+    <section class="hero">
+      <div class="hero-glow hero-glow-teal" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-orange" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            Marketplace de trabajo local en tiempo real &bull; Ecuador
+          </div>
+
+          <h1>El trabajo está más cerca de lo que imaginas.</h1>
+
+          <p class="hero-lead">
+            Conecta con personas que necesitan ayuda y encuentra oportunidades para trabajar cerca de ti. Publica un cachuelo, recibe ofertas o ponte disponible para trabajar.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#descargar" class="btn btn-primary btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Descargar CACHUELO
+            </a>
+            <a href="#trabajadores" class="btn btn-accent btn-lg">
+              Quiero trabajar
+            </a>
+            <a href="#como-funciona" class="btn btn-secondary btn-lg">
+              ¿Cómo funciona?
+            </a>
+          </div>
+
+          <div class="hero-pills">
+            <div class="feature-chip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF8A00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              Ofertas en tiempo real
+            </div>
+            <div class="feature-chip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00B4A6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Ubicación GPS real
+            </div>
+            <div class="feature-chip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00B4A6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+              Waze y Google Maps
+            </div>
+            <div class="feature-chip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg>
+              Pago en efectivo
+            </div>
+          </div>
+        </div>
+
+        <!-- Mockups reales de la interfaz de CACHUELO -->
+        <div class="hero-visual reveal">
+          <div class="mockup-stage">
+            <!-- Teléfono secundario: Radar GPS Trabajador Disponible -->
+            <div class="phone-frame phone-back" aria-hidden="true">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="mock-top-row">
+                  <div class="mock-avatar">D</div>
+                  <div>
+                    <div class="mock-user-title">Trabajador en línea</div>
+                    <div class="mock-user-sub">GPS activo &bull; Ecuador</div>
+                  </div>
+                </div>
+                <div class="mock-online-pill">
+                  <span>Disponible</span>
+                  <span class="mock-switch-knob"></span>
+                </div>
+                <div class="mock-radar-map">
+                  <div class="radar-ring ring-1"></div>
+                  <div class="radar-ring ring-2"></div>
+                  <div class="radar-center"></div>
+                  <div class="job-pin pin-a">$10</div>
+                  <div class="job-pin pin-b">$15</div>
+                  <div class="job-pin pin-c">$8</div>
+                </div>
+                <div class="mock-bottom-card">
+                  <strong>Esperando cachuelos...</strong>
+                  <span>Recibe oportunidades cercanas en tiempo real.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Teléfono principal: Oferta Dinámica y Negociación -->
+            <div class="phone-frame phone-front">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="mock-timer-bar"></div>
+                <div class="mock-offer-head">
+                  <div class="mock-bell-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF8A00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                  </div>
+                  <div>
+                    <div class="mock-alert-title">¡Nuevo Cachuelo!</div>
+                    <div class="mock-alert-sub">Trabajo cerca de ti</div>
+                  </div>
+                </div>
+
+                <div class="mock-job-title">Instalar soporte de TV</div>
+
+                <div class="mock-price-row">
+                  <span class="mock-price">$10.00</span>
+                  <span class="mock-cash-tag">Efectivo</span>
+                  <span class="mock-rating-tag">★ 5.0</span>
+                </div>
+
+                <div class="mock-net-box">
+                  <span>Comisión (10%): -$1.00</span>
+                  <strong class="text-success">Neto: $9.00</strong>
+                </div>
+
+                <div class="mock-meta-list">
+                  <div>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00B4A6" stroke-width="2.2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    A 1.2 km (&approx; 4 min) &bull; GPS verificado
+                  </div>
+                  <div>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#98B2C2" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    Duración estimada: 1 hora
+                  </div>
+                  <div>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#98B2C2" stroke-width="2.2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                    Herramientas: Debe llevarlas
+                  </div>
+                </div>
+
+                <div class="mock-actions">
+                  <div class="mock-btn mock-btn-primary">Aceptar Cachuelo</div>
+                  <div class="mock-btn mock-btn-outline">Negociar tarifa</div>
+                  <div class="mock-btn mock-btn-danger">Rechazar</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- B. QUÉ ES CACHUELO                                                  -->
+    <!-- =================================================================== -->
+    <section class="section" id="que-es">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-pill">Qué es CACHUELO</span>
+          <h2>Una sola app para resolver pendientes o generar ingresos cerca de ti</h2>
+          <p>
+            CACHUELO conecta en tiempo real a personas que necesitan realizar una tarea con personas disponibles y dispuestas a hacerla. Sin limitar el trabajo a una sola profesión ni encerrarte en categorías rígidas.
+          </p>
+        </div>
+
+        <div class="what-grid">
+          <div class="card-surface reveal">
+            <div class="icon-box icon-teal">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            </div>
+            <h3>Sin categorías restrictivas</h3>
+            <p>
+              Desde instalar un soporte de televisor o armar muebles, hasta ayuda en mudanzas, limpieza de patios, pintura, mandados, carga de mercadería o reparaciones puntuales: tú decides qué publicar o qué aceptar.
+            </p>
+          </div>
+
+          <div class="card-surface reveal">
+            <div class="icon-box icon-orange">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg>
+            </div>
+            <h3>Una sola cuenta, dos modos</h3>
+            <p>
+              Con el mismo registro puedes cambiar al instante entre <strong>Buscar Cachuelo</strong> (cuando quieras trabajar y generar ingresos) y <strong>Publicar Cachuelo</strong> (cuando necesites ayuda para resolver una tarea).
+            </p>
+          </div>
+
+          <div class="card-surface reveal">
+            <div class="icon-box icon-green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3>Acuerdo transparente y pago en efectivo</h3>
+            <p>
+              El cliente propone un monto inicial, el trabajador puede aceptar o enviar una contraoferta con la comisión visible desde antes de aceptar, y el pago se realiza directamente en efectivo al finalizar.
+            </p>
+          </div>
+        </div>
+
+        <!-- Ejemplos de tareas reales -->
+        <div class="tasks-strip reveal" aria-label="Ejemplos de cachuelos habituales">
+          <span>Instalar soportes de TV</span>
+          <span>Armado de muebles</span>
+          <span>Ayuda en mudanzas</span>
+          <span>Limpieza de casa o patio</span>
+          <span>Corte de césped</span>
+          <span>Pintura de habitaciones</span>
+          <span>Carga y descarga</span>
+          <span>Mandados y encargos</span>
+          <span>Reparaciones generales</span>
+          <span>Cualquier tarea acordada</span>
+        </div>
+
+        <!-- Galería oficial de pantallas de la app -->
+        <div class="showcase-panel reveal">
+          <div class="showcase-text">
+            <span class="section-pill">Interfaz real de la aplicación Android</span>
+            <h3>Diseñada para actuar rápido, clara desde el primer segundo</h3>
+            <p>
+              Cada pantalla de CACHUELO fue construida en Flutter con modo oscuro de alto contraste, radar GPS animado, tarjetas claras de negociación, acceso directo a Waze y Google Maps, código OTP y desglose de ganancias.
+            </p>
+            <button type="button" class="btn btn-secondary btn-sm" id="btn-zoom-showcase">
+              Ver pantallas en tamaño completo
+            </button>
+          </div>
+          <div class="showcase-media">
+            <img
+              src="assets/cachuelo-showcase.jpg"
+              alt="Pantallas oficiales de la aplicación móvil CACHUELO: Inicio, Selección de modo, Trabajador en línea, Oferta dinámica, Navegación Waze y Google Maps con OTP, Publicar Cachuelo y Mis ganancias"
+              width="1200"
+              height="800"
+              loading="lazy"
+              id="showcase-img-trigger"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- C. CÓMO FUNCIONA (5 ETAPAS VISUALES)                                -->
+    <!-- =================================================================== -->
+    <section class="section section-alt" id="como-funciona">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-pill">Cómo funciona</span>
+          <h2>De la idea al trabajo terminado en 5 pasos claros</h2>
+          <p>
+            Un flujo simple, sincronizado en tiempo real y pensado para que cualquier persona en Ecuador pueda usar la app sin complicaciones.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <div class="step-num">01</div>
+            <div class="step-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+            </div>
+            <h3>Publica tu cachuelo</h3>
+            <p>Describe qué necesitas, captura tu ubicación GPS automática (con referencia visual opcional) e indica cuánto estás dispuesto a pagar.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-num">02</div>
+            <div class="step-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            </div>
+            <h3>Recibe ofertas</h3>
+            <p>Los trabajadores disponibles cercanos reciben la oportunidad en tiempo real y pueden aceptar, rechazar o proponer otra tarifa.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-num">03</div>
+            <div class="step-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3>Elige y coordina</h3>
+            <p>Cliente y trabajador acuerdan las condiciones, asignan el trabajo sin duplicaciones y coordinan detalles por chat o llamada desde la app.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-num">04</div>
+            <div class="step-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+            </div>
+            <h3>Realiza el trabajo</h3>
+            <p>El trabajador navega directo por GPS con Waze o Google Maps, confirma su llegada validando el código OTP de 4 dígitos y ejecuta la tarea.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-num">05</div>
+            <div class="step-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3>Finaliza y califica</h3>
+            <p>Completa el cachuelo, realiza el pago en efectivo acordado directamente y califica la experiencia para fortalecer la reputación.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- D. PARA CLIENTES & E. PARA TRABAJADORES                             -->
+    <!-- =================================================================== -->
+    <section class="section" id="clientes">
+      <div class="container">
+        <div class="split-audience">
+          <!-- D. Clientes -->
+          <div class="audience-card audience-client reveal">
+            <span class="section-pill pill-orange">Para quienes necesitan ayuda</span>
+            <h2>¿Tienes algo pendiente y necesitas ayuda?</h2>
+            <p class="audience-desc">
+              Publica cualquier tarea en menos de un minuto desde tu celular. No necesitas escribir direcciones complicadas ni llenar formularios largos.
+            </p>
+            <ul class="check-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF8A00" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Ubicación GPS automática:</strong> la app captura tu punto exacto y te permite añadir una referencia opcional como <em>«Casa anaranjada frente a la tienda»</em>.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF8A00" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Tú pones la oferta inicial:</strong> indica cuánto ofreces en efectivo, duración estimada, si requiere herramientas y hasta 3 fotos opcionales.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF8A00" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Recibe propuestas en vivo:</strong> acepta una contraoferta, rechaza o espera otro trabajador disponible.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF8A00" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Control de llegada con código OTP:</strong> sigue el estado en tiempo real y entrega tu código de 4 dígitos al confirmar la llegada.</span>
+              </li>
+            </ul>
+            <div class="audience-cta-wrap">
+              <a href="#descargar" class="btn btn-accent btn-lg">
+                Publicar un cachuelo
+              </a>
+              <p class="cta-honest-note">La publicación de cachuelos en tiempo real se realiza desde la app oficial para Android.</p>
+            </div>
+          </div>
+
+          <!-- E. Trabajadores -->
+          <div class="audience-card audience-worker reveal" id="trabajadores">
+            <span class="section-pill pill-teal">Para quienes quieren trabajar</span>
+            <h2>Tu tiempo, tus oportunidades, tu manera de trabajar.</h2>
+            <p class="audience-desc">
+              Conéctate cuando tengas tiempo disponible, revisa los trabajos cerca de tu ubicación y elige libremente cuáles deseas realizar.
+            </p>
+            <ul class="check-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00B4A6" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Actívate o desconéctate cuando quieras:</strong> sin horarios fijos ni obligación de aceptar ofertas.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00B4A6" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Oportunidades cercanas en tiempo real:</strong> sin filtros de categorías que te excluyan; si sabes hacer el trabajo, puedes postularte.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00B4A6" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Revisa todo antes de aceptar:</strong> mira fotos, distancia, tiempo estimado, referencia y tu ganancia neta exacta tras la comisión del 10%.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00B4A6" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Acepta, rechaza o negocia la tarifa:</strong> envía una contraoferta justa y navega directo al lugar con Waze o Google Maps.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00B4A6" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Cobro directo en efectivo:</strong> recibe tu pago directamente del cliente al finalizar cada cachuelo y lleva tu historial contable claro.</span>
+              </li>
+            </ul>
+            <div class="audience-cta-wrap">
+              <a href="#descargar" class="btn btn-primary btn-lg">
+                Quiero generar ingresos
+              </a>
+              <p class="cta-honest-note">Descarga la app Android, crea tu cuenta gratuita y activa el modo Disponible.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- F. COBERTURA NACIONAL EN ECUADOR                                    -->
+    <!-- =================================================================== -->
+    <section class="section section-alt" id="ecuador">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-pill">Cobertura en Ecuador</span>
+          <h2>Diseñada para funcionar en todo el territorio ecuatoriano</h2>
+          <p>
+            CACHUELO utiliza coordenadas GPS reales y búsqueda dinámica con expansión progresiva de radio (5 km &rarr; 15 km &rarr; 60 km &rarr; cobertura nacional), sin bloqueos por ciudad, cantón ni provincia.
+          </p>
+        </div>
+
+        <div class="ecuador-grid">
+          <!-- Mapa ilustrado estilizado de Ecuador con nodos GPS -->
+          <div class="ecuador-map-card reveal">
+            <svg viewBox="0 0 460 440" class="ecuador-svg" role="img" aria-label="Mapa ilustrativo de cobertura técnica nacional de CACHUELO en Ecuador">
+              <defs>
+                <radialGradient id="ecGlow" cx="50%" cy="50%" r="55%">
+                  <stop offset="0%" stop-color="#00B4A6" stop-opacity="0.22" />
+                  <stop offset="100%" stop-color="#0B1F2A" stop-opacity="0" />
+                </radialGradient>
+                <linearGradient id="ecFill" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#143849" />
+                  <stop offset="100%" stop-color="#0D2532" />
+                </linearGradient>
+              </defs>
+              <rect width="460" height="440" fill="url(#ecGlow)" rx="20" />
+
+              <!-- Galápagos (recuadro referencial) -->
+              <rect x="20" y="24" width="102" height="74" rx="12" fill="#0B1F2A" stroke="#1C4254" stroke-dasharray="4 4" />
+              <circle cx="52" cy="56" r="7" fill="#18475C" stroke="#00B4A6" stroke-width="1.2" />
+              <circle cx="72" cy="64" r="5" fill="#18475C" stroke="#00B4A6" stroke-width="1.2" />
+              <circle cx="92" cy="54" r="4" fill="#18475C" stroke="#00B4A6" stroke-width="1.2" />
+              <text x="71" y="88" text-anchor="middle" fill="#98B2C2" font-size="10" font-weight="700">Galápagos</text>
+
+              <!-- Silueta estilizada de Ecuador Continental -->
+              <path
+                d="M178,44 L232,34 L288,52 L352,78 L412,118 L428,162 L396,214 L350,256 L308,308 L266,368 L220,404 L184,394 L166,356 L154,316 L132,286 L142,248 L114,228 L108,188 L124,144 L148,96 Z"
+                fill="url(#ecFill)"
+                stroke="#00B4A6"
+                stroke-width="2.2"
+              />
+
+              <!-- Líneas de conexión nacional -->
+              <g stroke="#00B4A6" stroke-opacity="0.32" stroke-width="1.4" stroke-dasharray="4 4">
+                <line x1="226" y1="112" x2="176" y2="188" />
+                <line x1="176" y1="188" x2="152" y2="246" />
+                <line x1="128" y1="178" x2="176" y2="188" />
+                <line x1="152" y1="246" x2="216" y2="296" />
+                <line x1="216" y1="296" x2="212" y2="364" />
+                <line x1="226" y1="112" x2="216" y2="296" />
+              </g>
+
+              <!-- Nodos de ciudades principales -->
+              <g class="map-node" data-city="quito">
+                <circle cx="226" cy="112" r="14" fill="#00B4A6" fill-opacity="0.18" />
+                <circle cx="226" cy="112" r="5.5" fill="#00B4A6" stroke="#F4F6FA" stroke-width="1.6" />
+                <text x="238" y="116" fill="#F4F6FA" font-size="12" font-weight="800">Quito</text>
+              </g>
+
+              <g class="map-node" data-city="manta">
+                <circle cx="128" cy="178" r="12" fill="#FF8A00" fill-opacity="0.2" />
+                <circle cx="128" cy="178" r="5" fill="#FF8A00" stroke="#F4F6FA" stroke-width="1.5" />
+                <text x="64" y="182" fill="#F4F6FA" font-size="11.5" font-weight="700">Manta / Manabí</text>
+              </g>
+
+              <g class="map-node" data-city="empalme">
+                <circle cx="176" cy="188" r="13" fill="#FF8A00" fill-opacity="0.2" />
+                <circle cx="176" cy="188" r="5" fill="#FF8A00" stroke="#F4F6FA" stroke-width="1.5" />
+                <text x="188" y="191" fill="#F4F6FA" font-size="11" font-weight="700">El Empalme / Quevedo</text>
+              </g>
+
+              <g class="map-node" data-city="guayaquil">
+                <circle cx="152" cy="246" r="16" fill="#00B4A6" fill-opacity="0.24" />
+                <circle cx="152" cy="246" r="6" fill="#00B4A6" stroke="#F4F6FA" stroke-width="1.8" />
+                <text x="165" y="250" fill="#F4F6FA" font-size="12.5" font-weight="800">Guayaquil / Guayas</text>
+              </g>
+
+              <g class="map-node" data-city="cuenca">
+                <circle cx="216" cy="296" r="12" fill="#00B4A6" fill-opacity="0.18" />
+                <circle cx="216" cy="296" r="5" fill="#00B4A6" stroke="#F4F6FA" stroke-width="1.5" />
+                <text x="229" y="300" fill="#F4F6FA" font-size="12" font-weight="700">Cuenca</text>
+              </g>
+
+              <g class="map-node" data-city="loja">
+                <circle cx="212" cy="364" r="12" fill="#FF8A00" fill-opacity="0.18" />
+                <circle cx="212" cy="364" r="5" fill="#FF8A00" stroke="#F4F6FA" stroke-width="1.5" />
+                <text x="225" y="368" fill="#F4F6FA" font-size="12" font-weight="700">Loja</text>
+              </g>
+
+              <g class="map-node" data-city="amazonia">
+                <circle cx="316" cy="176" r="10" fill="#00B4A6" fill-opacity="0.16" />
+                <circle cx="316" cy="176" r="4.5" fill="#00B4A6" stroke="#F4F6FA" stroke-width="1.4" />
+                <text x="328" y="180" fill="#98B2C2" font-size="11" font-weight="700">Amazonía</text>
+              </g>
+            </svg>
+          </div>
+
+          <div class="ecuador-info reveal">
+            <div class="region-tabs" role="tablist" aria-label="Regiones del Ecuador">
+              <button type="button" class="region-tab active" data-region="costa">Costa</button>
+              <button type="button" class="region-tab" data-region="sierra">Sierra</button>
+              <button type="button" class="region-tab" data-region="amazonia">Amazonía y Galápagos</button>
+            </div>
+
+            <div class="region-panel active" id="region-costa">
+              <h3>Región Costa — Cobertura habilitada</h3>
+              <p>Operación técnica habilitada con GPS real en ciudades capitales, cantones intermedios y parroquias:</p>
+              <div class="city-tags">
+                <span>Guayaquil</span><span>Daule</span><span>Milagro</span><span>El Empalme</span>
+                <span>Balzar</span><span>Palestina</span><span>Samborondón</span><span>Durán</span>
+                <span>Quevedo</span><span>Babahoyo</span><span>Manta</span><span>Jaramijó</span>
+                <span>Portoviejo</span><span>Montecristi</span><span>Chone</span><span>Machala</span>
+                <span>Santo Domingo</span><span>Esmeraldas</span><span>Santa Elena / Salinas</span>
+              </div>
+            </div>
+
+            <div class="region-panel" id="region-sierra">
+              <h3>Región Sierra — Cobertura habilitada</h3>
+              <p>Búsqueda geoespacial dinámica en todas las provincias interandinas:</p>
+              <div class="city-tags">
+                <span>Quito</span><span>Sangolquí</span><span>Cayambe</span><span>Cuenca</span>
+                <span>Gualaceo</span><span>Azogues</span><span>Loja</span><span>Catamayo</span>
+                <span>Ambato</span><span>Baños</span><span>Riobamba</span><span>Ibarra</span>
+                <span>Otavalo</span><span>Latacunga</span><span>Tulcán</span><span>Guaranda</span>
+              </div>
+            </div>
+
+            <div class="region-panel" id="region-amazonia">
+              <h3>Amazonía y Galápagos — Cobertura habilitada</h3>
+              <p>Sin restricciones geográficas en el oriente ecuatoriano ni en la región insular:</p>
+              <div class="city-tags">
+                <span>Tena</span><span>Puyo</span><span>Macas</span><span>Zamora</span>
+                <span>Nueva Loja (Lago Agrio)</span><span>El Coca</span><span>Puerto Ayora</span><span>San Cristóbal</span>
+              </div>
+            </div>
+
+            <div class="honesty-callout">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF8A00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <div>
+                <strong>Transparencia sobre cobertura vs. presencia operativa real:</strong>
+                <p>
+                  La tecnología de CACHUELO funciona técnicamente en las 24 provincias del Ecuador. Sin embargo, al ser una plataforma en etapa de lanzamiento y crecimiento progresivo, la cantidad de trabajadores conectados en tiempo real varía según la localidad y el horario. Si no hay suficientes trabajadores cerca, el sistema expande el radio progresivamente para que usuarios de zonas aledañas también puedan ver y aceptar tu oferta.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- G. SEGURIDAD Y CONFIANZA (SOLO MECANISMOS REALES)                   -->
+    <!-- =================================================================== -->
+    <section class="section" id="seguridad">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-pill">Seguridad y confianza</span>
+          <h2>Herramientas reales dentro de la app para coordinar con claridad</h2>
+          <p>
+            Cada mecanismo listado a continuación está implementado y operativo en la aplicación y en el servidor de CACHUELO.
+          </p>
+        </div>
+
+        <div class="security-grid">
+          <div class="sec-card reveal">
+            <div class="sec-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00B4A6" stroke-width="2.1"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3>Perfiles de usuarios</h3>
+            <p>Cada participante opera desde una cuenta autenticada con nombre, contacto, historial de trabajos completados y reputación acumulada.</p>
+          </div>
+
+          <div class="sec-card reveal">
+            <div class="sec-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF8A00" stroke-width="2.1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3>Calificaciones mutuas</h3>
+            <p>Al finalizar un cachuelo, tanto el cliente como el trabajador pueden calificarse de 1 a 5 estrellas con comentarios opcionales.</p>
+          </div>
+
+          <div class="sec-card reveal">
+            <div class="sec-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00B4A6" stroke-width="2.1"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3>Chat en tiempo real</h3>
+            <p>Mensajería directa vinculada al trabajo asignado para confirmar detalles, referencias y horarios sin salir de la plataforma.</p>
+          </div>
+
+          <div class="sec-card reveal">
+            <div class="sec-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2.1"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3>Código OTP de verificación</h3>
+            <p>Cada cachuelo genera un código único de 4 dígitos visible solo para el cliente. El servidor lo valida (con límite de 5 intentos) antes de iniciar el trabajo.</p>
+          </div>
+
+          <div class="sec-card reveal">
+            <div class="sec-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00B4A6" stroke-width="2.1"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3>Seguimiento GPS autorizado</h3>
+            <p>Mientras un trabajo está activo y con permiso del usuario, el mapa sincroniza la ubicación de traslado y las coordenadas exactas del destino.</p>
+          </div>
+
+          <div class="sec-card reveal">
+            <div class="sec-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF8A00" stroke-width="2.1"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <h3>Historial y reportes</h3>
+            <p>Todos los trabajos completados, cancelados y movimientos quedan registrados, junto con un módulo de tickets para reportar incidencias o disputas.</p>
+          </div>
+        </div>
+
+        <p class="security-disclaimer reveal">
+          <strong>Nota de transparencia:</strong> CACHUELO facilita herramientas tecnológicas de coordinación y registro, pero no realiza verificación de antecedentes judiciales ni incluye pólizas de seguro o garantías financieras sobre la ejecución de los trabajos. Acuerda siempre condiciones claras y toma las precauciones habituales al recibir o prestar un servicio presencial.
+        </p>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- H. DESCARGA OFICIAL DE ANDROID (APK REAL EN GITHUB RELEASES)        -->
+    <!-- =================================================================== -->
+    <section class="section section-download" id="descargar">
+      <div class="container">
+        <div class="download-box reveal">
+          <div class="download-main">
+            <span class="section-pill pill-teal">Descarga oficial para Android</span>
+            <h2>Descarga CACHUELO y empieza hoy mismo</h2>
+            <p>
+              Obtén la versión Release más reciente, compilada y verificada para operar en todo Ecuador. Descarga directa por HTTPS sin registros previos.
+            </p>
+
+            <div class="download-cta-row">
+              <a
+                href="https://github.com/danielitozv2006-prog/cachuelo/releases/download/v1.1.0/CACHUELO_v1.1.0_ecuador_release.apk"
+                class="btn btn-primary btn-xl"
+                id="btn-download-apk-main"
+                download="CACHUELO_v1.1.0_ecuador_release.apk"
+              >
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Descargar APK Oficial (53.43 MB)
+              </a>
+              <a
+                href="https://github.com/danielitozv2006-prog/cachuelo/releases/tag/v1.1.0"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-secondary btn-lg"
+                id="btn-download-apk-alt"
+              >
+                Descarga alternativa / Ver release
+              </a>
+            </div>
+
+            <div class="apk-meta-grid">
+              <div class="apk-meta-item">
+                <span class="meta-label">Archivo oficial</span>
+                <strong class="meta-val">CACHUELO_v1.1.0_ecuador_release.apk</strong>
+              </div>
+              <div class="apk-meta-item">
+                <span class="meta-label">Versión</span>
+                <strong class="meta-val">v1.1.0 Ecuador (APK 1.0.0 &bull; Build 1)</strong>
+              </div>
+              <div class="apk-meta-item">
+                <span class="meta-label">Tamaño real</span>
+                <strong class="meta-val">53.43 MB (56,022,328 bytes)</strong>
+              </div>
+              <div class="apk-meta-item">
+                <span class="meta-label">Fecha de actualización</span>
+                <strong class="meta-val">23 de noviembre de 2026</strong>
+              </div>
+              <div class="apk-meta-item">
+                <span class="meta-label">Android mínimo compatible</span>
+                <strong class="meta-val">Android 7.0 Nougat (API 24) o superior</strong>
+              </div>
+              <div class="apk-meta-item">
+                <span class="meta-label">Arquitecturas soportadas</span>
+                <strong class="meta-val">arm64-v8a &bull; armeabi-v7a &bull; x86_64</strong>
+              </div>
+            </div>
+
+            <div class="sha-box">
+              <div class="sha-label">Integridad verificable (SHA-256)</div>
+              <div class="sha-row">
+                <code id="apk-sha256">5da3ffb527914220cca1eda2f786d88fe028dd480296f6a6ba3984a4ece7bc82</code>
+                <button type="button" class="btn btn-secondary btn-xs" id="btn-copy-sha">Copiar SHA-256</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="install-guide">
+            <h3>Cómo instalar la APK en tu teléfono Android</h3>
+            <ol class="install-steps">
+              <li>
+                <strong>1. Descarga el archivo oficial</strong>
+                <p>Pulsa el botón <em>Descargar APK Oficial</em> y espera a que finalice la descarga de <code>CACHUELO_v1.1.0_ecuador_release.apk</code>.</p>
+              </li>
+              <li>
+                <strong>2. Abre el archivo descargado</strong>
+                <p>Toca la notificación de descarga completada o abre la carpeta <em>Descargas</em> de tu teléfono.</p>
+              </li>
+              <li>
+                <strong>3. Autoriza la instalación desde tu navegador</strong>
+                <p>Si Android muestra el aviso de seguridad por descarga directa fuera de Google Play, pulsa <em>Configuración</em> y activa <strong>Permitir desde esta fuente</strong>.</p>
+              </li>
+              <li>
+                <strong>4. Instala y crea tu cuenta</strong>
+                <p>Pulsa <em>Instalar</em>, abre CACHUELO, concede permiso de ubicación GPS y elige si deseas Buscar o Publicar Cachuelos.</p>
+              </li>
+            </ol>
+            <div class="external-source-note">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF8A00" stroke-width="2.2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              <span>Aviso: Al distribuirse mediante descarga directa oficial fuera de Google Play, Android solicita una confirmación única para instalar aplicaciones desde fuentes externas.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- I. PREGUNTAS FRECUENTES                                             -->
+    <!-- =================================================================== -->
+    <section class="section section-alt" id="faq">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-pill">Preguntas frecuentes</span>
+          <h2>Resolvemos tus dudas con total claridad</h2>
+        </div>
+
+        <div class="faq-list reveal">
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>¿Qué es CACHUELO?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>CACHUELO es una aplicación móvil diseñada para Ecuador que conecta en tiempo real a personas que necesitan ayuda con una tarea puntual (clientes) con personas disponibles cerca que pueden realizarla (trabajadores), sin categorías cerradas que limiten qué trabajos puedes publicar o aceptar.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>¿Cómo publico un trabajo?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Descarga la app Android, crea tu cuenta gratuita y elige <strong>Publicar Cachuelo</strong>. En 3 pasos rápidos indicas qué necesitas hacer, cuánto ofreces en efectivo, si requiere herramientas, fotos opcionales (sin videos) y confirmas tu ubicación GPS automática con una referencia visual opcional.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>¿Cómo puedo encontrar cachuelos?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Dentro de la app selecciona <strong>Buscar Cachuelo</strong> y activa el interruptor verde <strong>Disponible</strong> con tu GPS encendido. Recibirás en tiempo real los trabajos abiertos ordenados por cercanía, viendo precio, distancia, ganancia neta, descripción y fotos antes de decidir si aceptas, negocias o rechazas.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>¿Tengo que pagar para publicar?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>No. Publicar un cachuelo y recibir ofertas de trabajadores es completamente gratuito para el cliente. Solo pagas en efectivo el valor que acuerdes con el trabajador al finalizar el trabajo.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>¿Cómo se acuerda el precio?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>El cliente indica un precio inicial al publicar. Cuando un trabajador recibe la oferta puede aceptarla directamente a ese precio o enviar una contraoferta con otra tarifa; el cliente decide libremente si acepta la propuesta, la rechaza o espera a otro trabajador.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>¿Cómo se paga el trabajo?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Todos los trabajos se pagan en efectivo directamente entre el cliente y el trabajador al finalizar la tarea. CACHUELO registra de forma transparente el monto del trabajo y contabiliza la comisión de la plataforma (inicialmente del 10%) en la sección de ganancias del trabajador para su liquidación.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>¿CACHUELO está disponible en todo Ecuador?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Sí a nivel técnico: la app no tiene restricciones por ciudad y opera con GPS real en las 24 provincias de Ecuador (incluyendo Guayaquil, El Empalme, Balzar, Palestina, Daule, Milagro, Quevedo, Manta, Jaramijó, Quito, Cuenca, Loja y demás cantones). La disponibilidad inmediata de trabajadores depende de cuántos usuarios estén conectados en tu zona en ese momento.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>¿Cómo descargo la aplicación?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>En la sección <a href="#descargar">Descarga oficial de Android</a> de esta misma página pulsa <strong>Descargar APK Oficial</strong>. Recibirás directamente el archivo <code>CACHUELO_v1.1.0_ecuador_release.apk</code> compatible con Android 7.0 o superior.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>¿Qué hago si tengo un problema con un trabajo?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Dentro de la aplicación abre la pestaña <strong>Historial</strong> y pulsa <strong>Soporte / Reportar</strong> en el cachuelo correspondiente. Se generará un ticket auditable revisado por el equipo administrativo para atender disputas, ausencias o incidencias, y también puedes escribir al correo oficial de soporte.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- J. CONTACTO (SOLO CANALES REALES VERIFICADOS)                       -->
+    <!-- =================================================================== -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-pill">Contacto</span>
+          <h2>Canales oficiales de atención y soporte</h2>
+          <p>Utilizamos únicamente canales verificados de CACHUELO para asistir a clientes y trabajadores en Ecuador.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <div class="icon-box icon-teal">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <h3>Correo electrónico oficial</h3>
+            <p>Para consultas generales, soporte de instalación de la APK, privacidad o sugerencias sobre la plataforma.</p>
+            <a href="mailto:daniel@cachuelo.ec" class="btn btn-secondary btn-sm">daniel@cachuelo.ec</a>
+          </div>
+
+          <div class="contact-card reveal">
+            <div class="icon-box icon-orange">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3>Soporte directo dentro de la app</h3>
+            <p>Si ya eres usuario y necesitas reportar un inconveniente en un trabajo, abre <strong>Historial &rarr; Soporte / Reportar</strong> para crear un ticket vinculado a tu cachuelo.</p>
+            <a href="#descargar" class="btn btn-secondary btn-sm">Ir a descarga de la app</a>
+          </div>
+
+          <div class="contact-card reveal">
+            <div class="icon-box icon-green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3>Canales digitales en expansión</h3>
+            <p>Las cuentas oficiales en redes sociales y canales de atención por mensajería se publicarán únicamente en esta sección conforme sean habilitadas oficialmente.</p>
+            <span class="status-tag">Ecuador &bull; Lanzamiento 2026</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================== -->
+  <!-- K. FOOTER                                                             -->
+  <!-- ===================================================================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand-link">
+          <svg viewBox="0 0 100 85" width="38" height="32" aria-hidden="true">
+            <path d="M22,48 Q45,46 62,51 Q55,73 30,75 Q16,72 22,48 Z" fill="#00B4A6" />
+            <path d="M10,39 A32,30 0 0,1 74,39 L78,39 Q80,45 70,46 L8,46 Q2,45 6,38 Z" fill="#FF8A00" />
+            <g transform="translate(68,53) rotate(-42)">
+              <rect x="-22" y="-5.5" width="44" height="11" rx="5" fill="#F4F6FA" />
+              <circle cx="22" cy="0" r="12" fill="#F4F6FA" />
+              <circle cx="-20" cy="0" r="9.5" fill="#F4F6FA" />
+              <circle cx="26" cy="0" r="5.5" fill="#0B1F2A" />
+              <circle cx="-22" cy="0" r="4.2" fill="#0B1F2A" />
+            </g>
+          </svg>
+          <span class="wordmark">CACHU<span class="accent">ELO</span></span>
+        </a>
+        <p>
+          «Tu tiempo vale. Tu oportunidad está cerca.» Plataforma móvil ecuatoriana de trabajo ocasional bajo demanda en tiempo real.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <a href="#que-es">Qué es CACHUELO</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#clientes">Para clientes</a>
+        <a href="#trabajadores">Para trabajadores</a>
+        <a href="#ecuador">Cobertura en Ecuador</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Aplicación Android</h4>
+        <a href="#descargar">Descargar APK oficial</a>
+        <a href="#seguridad">Seguridad y confianza</a>
+        <a href="#faq">Preguntas frecuentes</a>
+        <a href="#contacto">Contacto y soporte</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Legal y transparencia</h4>
+        <a href="privacidad.html">Política de privacidad</a>
+        <a href="terminos.html">Términos y condiciones</a>
+        <a href="mailto:daniel@cachuelo.ec">daniel@cachuelo.ec</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 CACHUELO &mdash; Ecuador. Todos los derechos reservados.</p>
+      <div class="footer-legal-links">
+        <span>Web oficial v1.0 &bull; App Android v1.1.0</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX DE SHOWCASE -->
+  <div class="lightbox hidden" id="showcase-lightbox" role="dialog" aria-modal="true" aria-label="Vista ampliada de las pantallas de CACHUELO">
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Cerrar vista ampliada">&times;</button>
+    <img src="assets/cachuelo-showcase.jpg" alt="Vista completa de la interfaz móvil de CACHUELO" />
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
