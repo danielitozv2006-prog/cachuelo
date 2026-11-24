@@ -1,0 +1,32 @@
+name: Publish APK Release
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Assemble and publish verified APK release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          gh release download v1.1.0-staging -R "${{ github.repository }}" -p "cachuelo_apk.part*"
+          cat cachuelo_apk.part1 cachuelo_apk.part2 > CACHUELO_v1.1.0_ecuador_release.apk
+          ACTUAL_SIZE=$(stat -c%s CACHUELO_v1.1.0_ecuador_release.apk)
+          ACTUAL_SHA=$(sha256sum CACHUELO_v1.1.0_ecuador_release.apk | awk '{print $1}')
+          echo "Size: $ACTUAL_SIZE"
+          echo "SHA-256: $ACTUAL_SHA"
+          test "$ACTUAL_SIZE" = "56022328"
+          test "$ACTUAL_SHA" = "5da3ffb527914220cca1eda2f786d88fe028dd480296f6a6ba3984a4ece7bc82"
+          printf '%s\n' \
+            'Versión oficial Android de **CACHUELO** con cobertura técnica en las 24 provincias de Ecuador.' \
+            '' \
+            '- **Paquete:** `ec.cachuelo.cachuelo`' \
+            '- **Compatibilidad:** Android 7.0+ (API 24) · ARM64 / ARMv7 / x86_64' \
+            '- **Tamaño exacto:** 53.43 MB (56,022,328 bytes)' \
+            '- **SHA-256:** `5da3ffb527914220cca1eda2f786d88fe028dd480296f6a6ba3984a4ece7bc82`' \
+            > notes.md
+          gh release create v1.1.0 CACHUELO_v1.1.0_ecuador_release.apk -R "${{ github.repository }}" --target main --title "CACHUELO v1.1.0 — Android Release (Todo Ecuador)" --notes-file notes.md --latest
+          gh release delete v1.1.0-staging -R "${{ github.repository }}" --cleanup-tag -y
