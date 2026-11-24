@@ -1,0 +1,35 @@
+name: Publish APK v1.3.0 Release
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Assemble and publish verified v1.3.0 APK release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          gh release download v1.3.0-staging -R "${{ github.repository }}" -p "cachuelo_v130.part*"
+          cat cachuelo_v130.part1 cachuelo_v130.part2 > CACHUELO_v1.3.0_ecuador_release.apk
+          ACTUAL_SIZE=$(stat -c%s CACHUELO_v1.3.0_ecuador_release.apk)
+          ACTUAL_SHA=$(sha256sum CACHUELO_v1.3.0_ecuador_release.apk | awk '{print $1}')
+          echo "Size: $ACTUAL_SIZE"
+          echo "SHA-256: $ACTUAL_SHA"
+          test "$ACTUAL_SIZE" = "56485044"
+          test "$ACTUAL_SHA" = "25693bab4ca6a11dfec8969de867d5a4a7ad8ed925575b6122d4ca4bb128efda"
+          printf '%s\n' \
+            'Versión oficial Android **v1.3.0** de **CACHUELO** (Todo Ecuador).' \
+            '' \
+            '- **Icono oficial adaptativo Android**' \
+            '- **Registro e inicio de sesión directo sin confirmación obligatoria de correo**' \
+            '- **Mapas OpenStreetMap gratuitos sin API KEY REQUIRED**' \
+            '- **Búsqueda progresiva local 2 → 20 km y separación estricta Cliente / Cachuelador**' \
+            '- **Modelo real en efectivo con control de comisiones (límite USD 6) y comprobantes**' \
+            '- **Tamaño exacto:** 53.87 MB (56,485,044 bytes)' \
+            '- **SHA-256:** `25693bab4ca6a11dfec8969de867d5a4a7ad8ed925575b6122d4ca4bb128efda`' \
+            > notes.md
+          gh release create v1.3.0 CACHUELO_v1.3.0_ecuador_release.apk -R "${{ github.repository }}" --target main --title "CACHUELO v1.3.0 — Android Release Oficial (Todo Ecuador)" --notes-file notes.md --latest
+          gh release delete v1.3.0-staging -R "${{ github.repository }}" --cleanup-tag -y
