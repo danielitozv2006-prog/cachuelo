@@ -735,41 +735,102 @@ img {
   border-radius: 999px;
 }
 
-/* Showcase Panel */
-.showcase-panel {
+/* Experience Panel (Clean Brand Presentation) */
+.experience-panel {
   display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
-  gap: 30px;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 32px;
   align-items: center;
-  background: linear-gradient(135deg, rgba(18, 45, 58, 0.95), rgba(11, 31, 42, 0.95));
+  background: linear-gradient(135deg, rgba(18, 45, 58, 0.96), rgba(11, 31, 42, 0.96));
   border: 1.5px solid var(--border-teal);
   border-radius: var(--radius-xl);
-  padding: 30px;
+  padding: 34px;
   box-shadow: var(--shadow-lg);
 }
 
-.showcase-text h3 {
-  font-size: 24px;
+.experience-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.experience-brand img {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid var(--border-teal);
+  box-shadow: 0 6px 18px rgba(0, 180, 166, 0.22);
+}
+
+.experience-brand .section-pill {
+  margin-bottom: 0;
+}
+
+.experience-intro h3 {
+  font-size: 25px;
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 12px;
 }
 
-.showcase-text p {
+.experience-intro p {
   font-size: 14.5px;
   color: var(--text-sec);
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
-.showcase-media img {
-  border-radius: 16px;
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.exp-item {
+  background: rgba(11, 31, 42, 0.72);
   border: 1px solid var(--border);
-  cursor: zoom-in;
-  transition: transform 0.25s ease;
+  border-radius: 16px;
+  padding: 18px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
-.showcase-media img:hover {
-  transform: scale(1.015);
+.exp-item:hover {
+  border-color: var(--border-teal);
+  transform: translateY(-2px);
+}
+
+.exp-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.exp-icon-teal {
+  background: rgba(0, 180, 166, 0.14);
+  color: var(--primary-bright);
+  border: 1px solid rgba(0, 180, 166, 0.3);
+}
+
+.exp-icon-orange {
+  background: rgba(255, 138, 0, 0.14);
+  color: var(--accent);
+  border: 1px solid rgba(255, 138, 0, 0.3);
+}
+
+.exp-item h4 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.exp-item p {
+  font-size: 13px;
+  color: var(--text-sec);
+  line-height: 1.5;
 }
 
 /* Steps Grid */
@@ -1443,40 +1504,8 @@ img {
 }
 
 /* =====================================================================
-   LIGHTBOX & SCROLL REVEAL
+   SCROLL REVEAL
 ===================================================================== */
-.lightbox {
-  position: fixed;
-  inset: 0;
-  background: rgba(5, 14, 20, 0.92);
-  z-index: 2500;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-}
-
-.lightbox img {
-  max-width: 96vw;
-  max-height: 90vh;
-  border-radius: 16px;
-  border: 1.5px solid var(--primary);
-}
-
-.lightbox-close {
-  position: fixed;
-  top: 18px;
-  right: 22px;
-  background: var(--surface);
-  color: var(--text);
-  border: 1px solid var(--border-teal);
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  font-size: 28px;
-  cursor: pointer;
-}
-
 .reveal {
   opacity: 0;
   transform: translateY(18px);
@@ -1493,9 +1522,13 @@ img {
 ===================================================================== */
 @media (max-width: 1060px) {
   .hero-grid,
-  .showcase-panel,
+  .experience-panel,
   .ecuador-grid,
   .download-box {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-grid {
     grid-template-columns: 1fr;
   }
 

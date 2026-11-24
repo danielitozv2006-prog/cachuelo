@@ -70,32 +70,7 @@
     });
   }
 
-  // 5. Showcase Lightbox Modal
-  const lightbox = document.getElementById('showcase-lightbox');
-  const openBtn = document.getElementById('btn-zoom-showcase');
-  const imgTrigger = document.getElementById('showcase-img-trigger');
-  const closeBtn = document.getElementById('lightbox-close');
-
-  function openLightbox() {
-    if (lightbox) lightbox.classList.remove('hidden');
-  }
-  function closeLightbox() {
-    if (lightbox) lightbox.classList.add('hidden');
-  }
-
-  if (openBtn) openBtn.addEventListener('click', openLightbox);
-  if (imgTrigger) imgTrigger.addEventListener('click', openLightbox);
-  if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
-  if (lightbox) {
-    lightbox.addEventListener('click', (e) => {
-      if (e.target === lightbox) closeLightbox();
-    });
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeLightbox();
-    });
-  }
-
-  // 6. Scroll Reveal Animation
+  // 5. Scroll Reveal Animation
   const revealEls = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
     const obs = new IntersectionObserver(

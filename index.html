@@ -16,7 +16,7 @@
   <meta property="og:title" content="CACHUELO — El trabajo está más cerca de lo que imaginas" />
   <meta property="og:description" content="Conecta con personas que necesitan ayuda y encuentra oportunidades para trabajar cerca de ti en Ecuador. Descarga la app oficial para Android." />
   <meta property="og:url" content="https://danielitozv2006-prog.github.io/cachuelo/" />
-  <meta property="og:image" content="https://danielitozv2006-prog.github.io/cachuelo/assets/cachuelo-showcase.jpg" />
+  <meta property="og:image" content="https://danielitozv2006-prog.github.io/cachuelo/assets/icon-192.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="800" />
 
@@ -24,7 +24,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="CACHUELO — Trabajo local bajo demanda en Ecuador" />
   <meta name="twitter:description" content="Publica un cachuelo, recibe ofertas en tiempo real o actívate para generar ingresos cerca de ti. Descarga la APK oficial para Android." />
-  <meta name="twitter:image" content="https://danielitozv2006-prog.github.io/cachuelo/assets/cachuelo-showcase.jpg" />
+  <meta name="twitter:image" content="https://danielitozv2006-prog.github.io/cachuelo/assets/icon-192.png" />
 
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="apple-touch-icon" href="assets/icon-192.png" />
@@ -275,27 +275,54 @@
           <span>Cualquier tarea acordada</span>
         </div>
 
-        <!-- Galería oficial de pantallas de la app -->
-        <div class="showcase-panel reveal">
-          <div class="showcase-text">
-            <span class="section-pill">Interfaz real de la aplicación Android</span>
+        <!-- Presentación limpia de la experiencia móvil CACHUELO -->
+        <div class="experience-panel reveal">
+          <div class="experience-intro">
+            <div class="experience-brand">
+              <img src="assets/icon-192.png" alt="Logotipo oficial de CACHUELO" width="44" height="44" />
+              <div>
+                <span class="section-pill">Experiencia móvil Android</span>
+              </div>
+            </div>
             <h3>Diseñada para actuar rápido, clara desde el primer segundo</h3>
             <p>
-              Cada pantalla de CACHUELO fue construida en Flutter con modo oscuro de alto contraste, radar GPS animado, tarjetas claras de negociación, acceso directo a Waze y Google Maps, código OTP y desglose de ganancias.
+              Construida en Flutter con modo oscuro de alto contraste, ubicación GPS real, tarjetas claras de negociación, acceso directo a Waze y Google Maps, código OTP y desglose transparente de ganancias.
             </p>
-            <button type="button" class="btn btn-secondary btn-sm" id="btn-zoom-showcase">
-              Ver pantallas en tamaño completo
-            </button>
+            <a href="#descargar" class="btn btn-primary btn-sm">Descargar CACHUELO para Android</a>
           </div>
-          <div class="showcase-media">
-            <img
-              src="assets/cachuelo-showcase.jpg"
-              alt="Pantallas oficiales de la aplicación móvil CACHUELO: Inicio, Selección de modo, Trabajador en línea, Oferta dinámica, Navegación Waze y Google Maps con OTP, Publicar Cachuelo y Mis ganancias"
-              width="1200"
-              height="800"
-              loading="lazy"
-              id="showcase-img-trigger"
-            />
+
+          <div class="experience-grid">
+            <article class="exp-item">
+              <div class="exp-icon exp-icon-teal" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg>
+              </div>
+              <h4>Proximidad real (2 a 20 km)</h4>
+              <p>Inicia buscando en tu sector cercano y amplía por etapas controladas para evitar desplazamientos poco rentables.</p>
+            </article>
+
+            <article class="exp-item">
+              <div class="exp-icon exp-icon-orange" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
+              <h4>Tarifa y ganancia neta claras</h4>
+              <p>Acepta, rechaza o contraoferta viendo exactamente cuánto recibirás en efectivo descontando la comisión del 10%.</p>
+            </article>
+
+            <article class="exp-item">
+              <div class="exp-icon exp-icon-teal" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+              </div>
+              <h4>Ruta directa y llegada con OTP</h4>
+              <p>Abre la ubicación en Waze o Google Maps en un toque y confirma la llegada en el punto mediante código OTP.</p>
+            </article>
+
+            <article class="exp-item">
+              <div class="exp-icon exp-icon-orange" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <h4>Un solo registro para todo Ecuador</h4>
+              <p>Alterna entre publicar cachuelos o trabajar disponible en cualquier provincia, cantón, parroquia o sector del país.</p>
+            </article>
           </div>
         </div>
       </div>
@@ -966,12 +993,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- LIGHTBOX DE SHOWCASE -->
-  <div class="lightbox hidden" id="showcase-lightbox" role="dialog" aria-modal="true" aria-label="Vista ampliada de las pantallas de CACHUELO">
-    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Cerrar vista ampliada">&times;</button>
-    <img src="assets/cachuelo-showcase.jpg" alt="Vista completa de la interfaz móvil de CACHUELO" />
-  </div>
 
   <script src="main.js"></script>
 </body>
